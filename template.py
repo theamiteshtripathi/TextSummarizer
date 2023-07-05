@@ -40,7 +40,7 @@ for filepath in list_of_files:
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w", encoding="utf-8") as f:
             pass
-            logging.info(f"Created empty file: {filename}")
+            logging.info(f"Created empty file: {filepath}")
 
 
     else:
